@@ -17,7 +17,7 @@ class Point():
         pass
 
 
-    def inflow_calc(self, press_field):
+    def inflow_calc(self, press_field, speed_field):
         pass
 
 
