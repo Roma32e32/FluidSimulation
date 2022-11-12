@@ -1,4 +1,9 @@
 
 
 class Simulation():
-    pass
+    def __init__(self) -> None:
+        pass
+
+
+    def simulation(self):
+        pass
