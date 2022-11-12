@@ -9,17 +9,17 @@ class Point():
         self.speed = vec2
 
 
-    def press_grad(self, press_field):
+    def press_grad(self, press_array):
         pass
 
 
-    def viscosity(self, press_field):
+    def viscosity(self, press_array, speed_array):
         pass
 
 
-    def inflow_calc(self, press_field, speed_field):
+    def inflow_calc(self, press_array, speed_array):
         pass
 
 
-    def update_press(self, outflow):
+    def update_press(self):
         pass
