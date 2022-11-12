@@ -11,8 +11,8 @@ class App():
         ti.init(arch=ti.cuda)
 
         self.vars = Variables()
-        self.QUI = GUI(Variables)
-        self.sim = Simulation(Variables)
+        self.QUI = GUI(self.vars)
+        self.sim = Simulation(self.vars)
 
         self.clock = pg.time.Clock()
 
