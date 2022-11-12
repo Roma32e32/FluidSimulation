@@ -1,18 +1,24 @@
 import pygame as pg
 from GUIClass import GUI
 from SimulationClass import Simulation
+from VariablesClass import Variables
 from config import FPS
+import taichi as ti
 
 
 class App():
     def __init__(self):
-        self.QUI = GUI()
-        self.sim = Simulation()
+        ti.init(arch=ti.cuda)
+
+        self.vars = Variables()
+        self.QUI = GUI(Variables)
+        self.sim = Simulation(Variables)
 
         self.clock = pg.time.Clock()
 
 
     def quiting(self):
+        "Обрабатывает закрытие окна приложения"
         for event in pg.event.get():
             if event.type == pg.QUIT:
                 exit()
