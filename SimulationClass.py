@@ -1,4 +1,5 @@
 
 
 class Simulation:
-    pass
+    def __init__(self, global_data) -> None:
+        pass

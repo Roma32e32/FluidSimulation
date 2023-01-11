@@ -9,8 +9,8 @@ class App:
         self.global_data = GlobalData()
         self.clock = pg.time.Clock()
 
-        self.GUI = GUI()
-        self.SIM = Simulation()
+        self.GUI = GUI(self.global_data)
+        self.SIM = Simulation(self.global_data)
 
     def quiting(self):
         for event in pg.event.get():
